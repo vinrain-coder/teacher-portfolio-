@@ -1,48 +1,83 @@
 "use client";
 
-export default function Navbar() {
+import { useState } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const navItems = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Education", href: "#education" },
+  { label: "Experience", href: "#experience" },
+  { label: "Subjects", href: "#subjects" },
+  { label: "Portfolio", href: "#portfolio" },
+  { label: "Contact", href: "#contact" },
+];
+
+export default function SiteNavbar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <nav className="fixed top-4 left-1/2 z-50 w-[95%] max-w-6xl -translate-x-1/2">
-      <div
-        className="
-          flex items-center justify-between
-          rounded-2xl px-6 py-3
-          backdrop-blur-xl bg-white/30
-          border border-white/40
-          shadow-lg
-        "
-      >
-        {/* Logo / Name */}
-        <a
+    <header className="fixed top-4 left-1/2 z-50 w-[95%] max-w-6xl -translate-x-1/2">
+      <div className="flex items-center justify-between rounded-2xl border border-white/40 bg-white/30 px-6 py-3 backdrop-blur-xl shadow-lg">
+        {/* Brand */}
+        <Link
           href="#home"
-          className="text-lg font-semibold text-green-800"
+          className="text-lg font-semibold text-green-700"
         >
           Vincent Ombogo
-        </a>
+        </Link>
 
-        {/* Desktop Links */}
-        <ul className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
-          <li><a href="#about" className="hover:text-green-700 transition">About</a></li>
-          <li><a href="#education" className="hover:text-green-700 transition">Education</a></li>
-          <li><a href="#experience" className="hover:text-green-700 transition">Experience</a></li>
-          <li><a href="#subjects" className="hover:text-green-700 transition">Subjects</a></li>
-          <li><a href="#portfolio" className="hover:text-green-700 transition">Portfolio</a></li>
-        </ul>
+        {/* Desktop nav */}
+        <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-muted-foreground">
+          {navItems.slice(1, -1).map((item) => (
+            <Link
+              key={item.label}
+              href={item.href}
+              className="hover:text-green-700 transition"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
 
-        {/* CTA */}
-        <a
-          href="#contact"
-          className="
-            hidden md:inline-block
-            rounded-xl px-4 py-2
-            bg-green-700 text-white text-sm
-            hover:bg-green-800 transition
-          "
+        {/* Desktop CTA */}
+        <div className="hidden md:block">
+          <Button asChild size="sm">
+            <Link href="#contact">Contact</Link>
+          </Button>
+        </div>
+
+        {/* Mobile toggle */}
+        <Button
+          variant="ghost"
+          size="icon"
+          className="md:hidden"
+          onClick={() => setOpen(!open)}
         >
-          Contact
-        </a>
+          {open ? <X /> : <Menu />}
+        </Button>
       </div>
-    </nav>
+
+      {/* Mobile menu */}
+      {open && (
+        <div className="mt-3 rounded-2xl border border-white/40 bg-white/40 backdrop-blur-xl shadow-xl md:hidden">
+          <nav className="flex flex-col divide-y">
+            {navItems.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className="px-6 py-4 text-sm hover:bg-white/50 transition"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+      )}
+    </header>
+    
   );
-        
-        }
+    }
