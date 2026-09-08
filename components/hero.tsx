@@ -46,7 +46,7 @@ const Hero = () => {
             Comprehensive School, dedicated to nurturing curiosity through
             hands-on science education.
           </p>
-          <a href="#about">
+          <a href="#portfolio">
             <MagicButton
               title="Explore My Work"
               icon={<FaLocationArrow />}

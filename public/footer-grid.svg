@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <pattern id="noteLines" x="0" y="0" width="200" height="28" patternUnits="userSpaceOnUse">
+      <line x1="16" y1="0" x2="200" y2="0" stroke="#0d9488" stroke-width="0.6" opacity="0.45"/>
+      <line x1="0" y1="28" x2="200" y2="28" stroke="#0d9488" stroke-width="0.3" opacity="0.2"/>
+    </pattern>
+
+    <radialGradient id="fade" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#0d9488" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0d9488" stop-opacity="0"/>
+    </radialGradient>
+
+    <mask id="pageMask">
+      <rect width="200" height="200" fill="url(#fade)"/>
+    </mask>
+  </defs>
+
+  <g mask="url(#pageMask)">
+    <rect width="200" height="200" fill="url(#noteLines)"/>
+    <line x1="18" y1="0" x2="18" y2="200" stroke="#f43f5e" stroke-width="0.8" opacity="0.35"/>
+    <circle cx="18" cy="8" r="2.2" fill="#f43f5e" opacity="0.5"/>
+  </g>
+</svg>

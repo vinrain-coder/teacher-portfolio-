@@ -1,6 +1,6 @@
 export const navItems = [
   { name: "About", hash: "#about" },
-  { name: "Teaching", hash: "#teaching" },
+  { name: "Experience", hash: "#experience" },
   { name: "Portfolio", hash: "#portfolio" },
   { name: "Education", hash: "#education" },
   { name: "Contact", hash: "#contact" },
@@ -125,5 +125,28 @@ export const experiences = [
       "Assisted lecturers during practical demonstrations and field attachment programs related to crop science and biology.",
       "Contributed to the development of practical manuals and student guides used in the Faculty of Education.",
     ],
+  },
+];
+
+export const socialMedia = [
+  {
+    id: 1,
+    img: "/youtube.svg",
+    link: "https://www.youtube.com/@vincentombogo",
+  },
+  {
+    id: 2,
+    img: "/link.svg",
+    link: "https://www.linkedin.com/in/vincent-ombogo-36912a1b2",
+  },
+  {
+    id: 3,
+    img: "/twit.svg",
+    link: "https://x.com/VinyRain",
+  },
+  {
+    id: 4,
+    img: "/git.svg",
+    link: "https://github.com/vinrain-coder",
   },
 ];

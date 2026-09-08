@@ -46,7 +46,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
             alt={experience.company_name}
             className="w-[60%] h-[60%] object-contain"
           />
-        </div>
+    </div>
       }
     >
       <div>
@@ -77,7 +77,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
 
 const Experience: React.FC = () => {
   return (
-    <div className="py-20">
+    <section id="experience" className="py-20 space-y-6">
       <motion.div
         variants={textVariant(0)}
         initial="hidden"
@@ -85,13 +85,13 @@ const Experience: React.FC = () => {
         viewport={{ once: true }}
         className="text-center"
       >
-        <h1 className="heading">
+        <h2 className="text-3xl font-semibold tracking-tight">
           A quick glance at my{" "}
           <span className="text-primary">professional journey</span>
-        </h1>
+        </h2>
       </motion.div>
 
-      <div className="mt-16">
+      <div>
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
@@ -101,7 +101,7 @@ const Experience: React.FC = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </div>
+    </section>
   );
 };
 

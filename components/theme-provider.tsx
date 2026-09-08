@@ -20,7 +20,7 @@ const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 
 export function ThemeProvider({
   children,
-  defaultTheme = "system",
+  defaultTheme = "dark",
   storageKey = "teacher-portfolio-theme",
 }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(() => {
