@@ -1,19 +1,25 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar";
+import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { ThemeProvider } from "@/components/theme-provider";
+import { navItems } from "@/data";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import { Inter, Lora, JetBrains_Mono } from "next/font/google";
+
+const fontSans = Inter({
   subsets: ["latin"],
-  display: "swap",
+  variable: "--font-sans",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const fontSerif = Lora({
   subsets: ["latin"],
-  display: "swap",
+  variable: "--font-serif",
+});
+
+const fontMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -45,18 +51,16 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`
-          ${geistSans.variable}
-          ${geistMono.variable}
-          min-h-screen
-          bg-background
-          font-sans
-          antialiased
-        `}
+        className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} min-h-screen antialiased overflow-x-hidden`}
       >
-        <Navbar />
-        <main className="mx-auto max-w-6xl px-4 pt-32">{children}</main>
-        <Footer />
+        <ThemeProvider
+          defaultTheme="system"
+          storageKey="teacher-portfolio-theme"
+        >
+          <NavBar navItems={navItems} />
+          <main className="mx-auto max-w-6xl px-4">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
