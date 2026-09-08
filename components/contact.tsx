@@ -1,6 +1,6 @@
 import { Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Section from "./section ";
+import Section from "./section";
 
 export default function Contact() {
   return (
@@ -19,7 +19,7 @@ export default function Contact() {
         </div>
 
         <Button asChild>
-          <a href="mailto:vincentombogo@gmail.com">Send Email</a>
+          <a href="mailto:vincentombogo57@gmail.com">Send Email</a>
         </Button>
       </div>
     </Section>

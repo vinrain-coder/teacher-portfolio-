@@ -72,3 +72,58 @@ export const gridItems = [
     spareImg: "",
   },
 ];
+
+export const experiences = [
+  {
+    title: "Teacher",
+    company_name: "Kisii Comprehensive School",
+    icon: "/exp-school.svg",
+    iconBg: "var(--primary)",
+    date: "January 2024 - Present",
+    points: [
+      "Teach Integrated Science and Agriculture to Junior Secondary School learners, aligning lessons with the Competency-Based Education (CBE) framework.",
+      "Design and implement hands-on practical activities, science experiments, and school garden projects to reinforce theoretical concepts.",
+      "Collaborate with colleagues to develop schemes of work, lesson plans, and assessment rubrics that meet KICD curriculum standards.",
+      "Mentor learners in science fairs, exhibitions, and career guidance sessions to inspire future innovators.",
+    ],
+  },
+  {
+    title: "Teacher Intern",
+    company_name: "Machakos School",
+    icon: "/exp-intern.svg",
+    iconBg: "var(--secondary)",
+    date: "March 2023 - December 2023",
+    points: [
+      "Assisted in delivering Biology and Agriculture lessons to Form 1 and Form 2 classes under the supervision of experienced teachers.",
+      "Facilitated laboratory practical sessions, ensuring proper use of equipment and adherence to safety protocols.",
+      "Participated in co-curricular activities including the Science Club and Environmental Club, organizing field trips and practical workshops.",
+      "Received commendation for innovative lesson delivery and effective classroom management during the internship period.",
+    ],
+  },
+  {
+    title: "Volunteer Educator",
+    company_name: "Community Learning Center, Kisii",
+    icon: "/exp-volunteer.svg",
+    iconBg: "var(--accent)",
+    date: "June 2022 - February 2023",
+    points: [
+      "Taught foundational science and environmental education to out-of-school youth and adult learners in the local community.",
+      "Developed simplified, context-relevant learning materials and visual aids to support non-formal education.",
+      "Organized community awareness campaigns on sustainable agriculture, hygiene, and environmental conservation.",
+      "Partnered with local NGOs to distribute learning resources and facilitate weekend tutoring sessions.",
+    ],
+  },
+  {
+    title: "Lab Assistant",
+    company_name: "Kenyatta University Science Labs",
+    icon: "/exp-lab.svg",
+    iconBg: "var(--chart-1)",
+    date: "September 2020 - May 2022",
+    points: [
+      "Supported Biology and Agriculture laboratory sessions for undergraduate students by preparing specimens, reagents, and experimental setups.",
+      "Maintained laboratory equipment, inventory, and safety records while ensuring a clean and organized learning environment.",
+      "Assisted lecturers during practical demonstrations and field attachment programs related to crop science and biology.",
+      "Contributed to the development of practical manuals and student guides used in the Faculty of Education.",
+    ],
+  },
+];
