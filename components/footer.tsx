@@ -8,7 +8,15 @@ import { socialMedia } from "@/data";
 import ContactForm from "./contact-form";
 import MagicButton from "./ui/magic-button";
 
-const Footer = () => {
+interface FooterProps {
+  heading?: string;
+  highlight?: string;
+}
+
+const Footer = ({
+  heading = "Let's",
+  highlight = "get in touch",
+}: FooterProps) => {
   const pathname = usePathname();
   const isHomepage = pathname === "/";
 
@@ -29,16 +37,16 @@ const Footer = () => {
         {isHomepage ? (
           <>
             <div className="flex flex-col items-center">
-              <h1 className="text-4xl md:text-5xl font-bold tracking-tight lg:max-w-[45vw] text-center">
-                Let&apos;s{" "}
-                <span className="text-primary">
-                  inspire the next generation
-                </span>{" "}
-                together
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-center">
+                {heading}{" "}
+                <span className="text-transparent bg-clip-text bg-primary">
+                  {highlight}
+                </span>
               </h1>
               <p className="text-muted-foreground md:mt-10 my-5 text-center">
                 Have a question or want to connect? Reach out and let&apos;s
-                discuss how I can help shape future innovators through science
+                discuss
+                <br /> how I can help shape future innovators through science
                 education.
               </p>
             </div>

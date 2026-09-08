@@ -1,12 +1,20 @@
 import { gridItems } from "@/data";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 
-const Grid = () => {
+interface GridProps {
+  heading?: string;
+  highlight?: string;
+}
+
+const Grid = ({ heading = "About", highlight = "me" }: GridProps) => {
   return (
     <section id="about" className="py-20 space-y-6">
-      <h2 className="text-3xl font-semibold tracking-tight text-center">
-        About <span className="text-primary">me</span>
-      </h2>
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-center">
+        {heading}{" "}
+        <span className="text-transparent bg-clip-text bg-primary">
+          {highlight}
+        </span>
+      </h1>
       <BentoGrid className="w-full">
         {gridItems.map((item, i) => (
           <BentoGridItem

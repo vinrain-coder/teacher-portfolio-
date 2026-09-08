@@ -23,6 +23,11 @@ type ExperienceCardProps = {
   experience: ExperienceType;
 };
 
+interface ExperienceProps {
+  heading?: string;
+  highlight?: string;
+}
+
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   return (
     <VerticalTimelineElement
@@ -38,7 +43,10 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
       }}
       date={experience.date}
       dateClassName="text-muted-foreground font-medium"
-      iconStyle={{ background: experience.iconBg, boxShadow: `0 0 0 4px var(--card), 0 0 0 8px var(--border)` }}
+      iconStyle={{
+        background: experience.iconBg,
+        boxShadow: `0 0 0 4px var(--card), 0 0 0 8px var(--border)`,
+      }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <img
@@ -46,7 +54,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
             alt={experience.company_name}
             className="w-[60%] h-[60%] object-contain"
           />
-    </div>
+        </div>
       }
     >
       <div>
@@ -75,7 +83,10 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   );
 };
 
-const Experience: React.FC = () => {
+const Experience: React.FC<ExperienceProps> = ({
+  heading = "A quick glance at my",
+  highlight = "professional journey",
+}) => {
   return (
     <section id="experience" className="py-20 space-y-6">
       <motion.div
@@ -85,10 +96,12 @@ const Experience: React.FC = () => {
         viewport={{ once: true }}
         className="text-center"
       >
-        <h2 className="text-3xl font-semibold tracking-tight">
-          A quick glance at my{" "}
-          <span className="text-primary">professional journey</span>
-        </h2>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-center">
+          {heading}{" "}
+          <span className="text-transparent bg-clip-text bg-primary">
+            {highlight}
+          </span>
+        </h1>
       </motion.div>
 
       <div>

@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", hash: "#about" },
   { name: "Experience", hash: "#experience" },
-  { name: "Portfolio", hash: "#portfolio" },
+  { name: "Portfolio", hash: "#portfolios" },
   { name: "Education", hash: "#education" },
   { name: "Contact", hash: "#contact" },
 ];
@@ -148,5 +148,81 @@ export const socialMedia = [
     id: 4,
     img: "/git.svg",
     link: "https://github.com/vinrain-coder",
+  },
+];
+
+export const portfolios = [
+  {
+    id: 1,
+    title: "CBE Lesson Plans & Schemes of Work",
+    des: "Competency-based lesson plans and schemes of work aligned with KICD standards for Junior Secondary Science.",
+    img: "/portfolio-lesson-plans.svg",
+    iconLists: ["/icon-curriculum.svg", "/icon-cbe.svg", "/icon-teach.svg", "/icon-kicd.svg"],
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "Science Lab Practical Manual",
+    des: "A comprehensive collection of hands-on practical activities and experiments for Integrated Science and Agriculture.",
+    img: "/portfolio-lab-manual.svg",
+    iconLists: [
+      "/icon-lab.svg",
+      "/icon-science.svg",
+      "/icon-safety.svg",
+      "/icon-experiment.svg",
+    ],
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "Student Assessment & Rubrics System",
+    des: "CBC-aligned assessment rubrics and student progress tracking tools for holistic competency evaluation.",
+    img: "/portfolio-assessment.svg",
+    iconLists: [
+      "/icon-assess.svg",
+      "/icon-cbc.svg",
+      "/icon-rubric.svg",
+      "/icon-tracker.svg",
+    ],
+    link: "#",
+  },
+  {
+    id: 4,
+    title: "School Garden & Agriculture Project",
+    des: "A thriving school garden initiative teaching sustainable agriculture, crop science, and environmental stewardship.",
+    img: "/portfolio-garden.svg",
+    iconLists: [
+      "/icon-garden.svg",
+      "/icon-plant.svg",
+      "/icon-agri.svg",
+      "/icon-sustain.svg",
+    ],
+    link: "#",
+  },
+  {
+    id: 5,
+    title: "Science Fair & Exhibition Projects",
+    des: "Showcase of student-led science fair projects, exhibitions, and innovative research from Junior Secondary learners.",
+    img: "/portfolio-science-fair.svg",
+    iconLists: [
+      "/icon-fair.svg",
+      "/icon-project.svg",
+      "/icon-innovate.svg",
+      "/icon-exhibit.svg",
+    ],
+    link: "#",
+  },
+  {
+    id: 6,
+    title: "Digital Teaching Resources",
+    des: "Interactive digital resources and multimedia materials designed to make science education engaging and accessible.",
+    img: "/portfolio-digital.svg",
+    iconLists: [
+      "/icon-digital.svg",
+      "/icon-multimedia.svg",
+      "/icon-online.svg",
+      "/icon-resource.svg",
+    ],
+    link: "#",
   },
 ];
