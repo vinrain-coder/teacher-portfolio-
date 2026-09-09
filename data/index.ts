@@ -133,7 +133,7 @@ export const socialMedia = [
   {
     id: 1,
     img: "/youtube.svg",
-    link: "https://www.youtube.com/@vincentombogo",
+    link: "https://www.youtube.com/@vinrain1134",
   },
   {
     id: 2,
