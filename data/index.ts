@@ -1,8 +1,9 @@
 export const navItems = [
   { name: "About", hash: "#about" },
   { name: "Experience", hash: "#experience" },
-  { name: "Portfolio", hash: "#portfolios" },
   { name: "Education", hash: "#education" },
+  { name: "Testimonials", hash: "#testimonials" },
+  { name: "Portfolio", hash: "#portfolios" },
   { name: "Contact", hash: "#contact" },
 ];
 
@@ -157,7 +158,12 @@ export const portfolios = [
     title: "CBE Lesson Plans & Schemes of Work",
     des: "Competency-based lesson plans and schemes of work aligned with KICD standards for Junior Secondary Science.",
     img: "/portfolio-lesson-plans.svg",
-    iconLists: ["/icon-curriculum.svg", "/icon-cbe.svg", "/icon-teach.svg", "/icon-kicd.svg"],
+    iconLists: [
+      "/icon-curriculum.svg",
+      "/icon-cbe.svg",
+      "/icon-teach.svg",
+      "/icon-kicd.svg",
+    ],
     link: "#",
   },
   {
@@ -224,5 +230,80 @@ export const portfolios = [
       "/icon-resource.svg",
     ],
     link: "#",
+  },
+];
+
+export const education = [
+  {
+    id: 1,
+    type: "degree",
+    title: "Bachelor of Education (Science)",
+    institution: "Kenyatta University",
+    field: "Biology & Agriculture",
+    year: "2018 – 2022",
+    description:
+      "Specialized in Biology and Agriculture education with a focus on practical, hands-on teaching methodologies and curriculum design.",
+    icon: "GraduationCap",
+  },
+  {
+    id: 2,
+    type: "qualification",
+    title: "TSC Registered Teacher",
+    institution: "Teachers Service Commission",
+    year: "2022",
+    description:
+      "Fully registered teacher authorized to teach in public schools across Kenya.",
+    icon: "BadgeCheck",
+  },
+  {
+    id: 3,
+    type: "qualification",
+    title: "CBE Curriculum Implementation",
+    institution: "Kenya Institute of Curriculum Development",
+    year: "2023",
+    description:
+      "Certified in Competency-Based Education curriculum implementation, pedagogy, and assessment strategies aligned with KICD standards.",
+    icon: "BadgeCheck",
+  },
+  {
+    id: 4,
+    type: "qualification",
+    title: "ICT Integration in Teaching & Learning",
+    institution: "KICD / e-Learning Kenya",
+    year: "2023",
+    description:
+      "Trained in integrating information and communication technology into classroom instruction for enhanced learner engagement.",
+    icon: "BadgeCheck",
+  },
+];
+
+export const testimonials = [
+  {
+    quote:
+      "Vincent has a remarkable ability to make complex science concepts accessible and exciting. My daughter now comes home talking about biology experiments and school garden projects with genuine enthusiasm.",
+    name: "Grace Wanjiku",
+    designation: "Parent, Form 1 Student",
+    src: "/testimonial-1.svg",
+  },
+  {
+    quote:
+      "The hands-on approach to learning made all the difference. I used to struggle with science, but Mr. Ombogo's practical lessons helped me not just understand, but love the subject. I scored an A in my KCSE.",
+    name: "Brian Kipchoge",
+    designation: "Former Student, Class of 2022",
+    src: "/testimonial-2.svg",
+  },
+  {
+    quote:
+      "Vincent is one of the most dedicated educators I have worked with. His innovative lesson plans and ability to integrate technology into classroom instruction have raised the bar for science education at our school.",
+    name: "Mary Achieng",
+    designation: "Senior Teacher, Kisii Comprehensive School",
+    src: "/testimonial-3.svg",
+  },
+  {
+    quote:
+      "Under Vincent's guidance, our science program has seen significant improvement in student engagement and performance. His commitment to the CBE framework and practical learning is exemplary.",
+    name: "James Otieno",
+    designation: "Deputy Principal, Kisii Comprehensive School",
+    src: "/testimonial-4.svg",
   },
 ];

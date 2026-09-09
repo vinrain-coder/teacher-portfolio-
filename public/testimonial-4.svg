@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d1fae5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skin4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8d5524;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7a451e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="hair4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#111111;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#222222;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bg4)" rx="24"/>
+  <!-- Shoulders / Clothing -->
+  <path d="M80 500 L80 380 Q200 340 320 380 L320 500 Z" fill="#064e3b"/>
+  <path d="M120 500 L120 400 Q200 370 280 400 L280 500 Z" fill="#065f46"/>
+  <!-- Tie -->
+  <path d="M195 400 L200 450 L205 400 Z" fill="#fbbf24"/>
+  <rect x="190" y="395" width="20" height="10" fill="#fbbf24" rx="2"/>
+  <!-- Neck -->
+  <rect x="175" y="290" width="50" height="60" fill="url(#skin4)" rx="8"/>
+  <!-- Face -->
+  <ellipse cx="200" cy="220" rx="85" ry="100" fill="url(#skin4)"/>
+  <!-- Hair (short, neat) -->
+  <path d="M115 220 Q115 100 200 100 Q285 100 285 220 Q285 160 260 140 Q240 125 200 125 Q160 125 140 140 Q115 160 115 220" fill="url(#hair4)"/>
+  <path d="M120 210 Q130 145 200 145 Q270 145 280 210" fill="url(#hair4)"/>
+  <!-- Eyes -->
+  <ellipse cx="165" cy="210" rx="12" ry="8" fill="#fff"/>
+  <ellipse cx="235" cy="210" rx="12" ry="8" fill="#fff"/>
+  <circle cx="165" cy="210" r="5" fill="#111"/>
+  <circle cx="235" cy="210" r="5" fill="#111"/>
+  <!-- Eyebrows -->
+  <path d="M150 195 Q165 188 180 195" stroke="#111" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M220 195 Q235 188 250 195" stroke="#111" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Nose -->
+  <path d="M200 220 L195 250 Q200 255 205 250 L200 220" fill="#6b3e12" opacity="0.4"/>
+  <!-- Gentle smile -->
+  <path d="M170 270 Q200 285 230 270" stroke="#6b3e12" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdf2f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fce7f3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skin3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0ac69;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d49a5a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="hair3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c1810;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3e2723;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bg3)" rx="24"/>
+  <!-- Shoulders / Clothing -->
+  <path d="M80 500 L80 380 Q200 340 320 380 L320 500 Z" fill="#4a1942"/>
+  <path d="M120 500 L120 400 Q200 370 280 400 L280 500 Z" fill="#831843"/>
+  <!-- Neck -->
+  <rect x="175" y="290" width="50" height="60" fill="url(#skin3)" rx="8"/>
+  <!-- Face -->
+  <ellipse cx="200" cy="220" rx="80" ry="95" fill="url(#skin3)"/>
+  <!-- Hair (shoulder length) -->
+  <path d="M115 220 Q115 100 200 100 Q285 100 285 220 Q285 320 260 340 Q240 350 200 350 Q160 350 140 340 Q115 320 115 220" fill="url(#hair3)"/>
+  <path d="M120 210 Q130 150 200 150 Q270 150 280 210" fill="url(#hair3)"/>
+  <!-- Hair sides -->
+  <path d="M115 220 Q115 280 130 340" stroke="url(#hair3)" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <path d="M285 220 Q285 280 270 340" stroke="url(#hair3)" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <!-- Eyes -->
+  <ellipse cx="165" cy="210" rx="12" ry="8" fill="#fff"/>
+  <ellipse cx="235" cy="210" rx="12" ry="8" fill="#fff"/>
+  <circle cx="165" cy="210" r="5" fill="#2c1810"/>
+  <circle cx="235" cy="210" r="5" fill="#2c1810"/>
+  <!-- Eyebrows -->
+  <path d="M150 195 Q165 188 180 195" stroke="#2c1810" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M220 195 Q235 188 250 195" stroke="#2c1810" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Nose -->
+  <path d="M200 220 L195 250 Q200 255 205 250 L200 220" fill="#b8844a" opacity="0.4"/>
+  <!-- Smile -->
+  <path d="M170 270 Q200 290 230 270" stroke="#a06b3a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Earrings -->
+  <circle cx="115" cy="245" r="5" fill="#fbbf24"/>
+  <circle cx="285" cy="245" r="5" fill="#fbbf24"/>
+</svg>

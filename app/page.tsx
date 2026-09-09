@@ -4,6 +4,7 @@ import Education from "@/components/education";
 import Portfolio from "@/components/portfolio";
 import Grid from "@/components/grid";
 import Experience from "@/components/experience";
+import Testimonials from "@/components/testimonials";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Grid />
       <Experience />
       <Education />
+      <Testimonials />
       <Portfolio />
     </>
   );
