@@ -157,79 +157,97 @@ export const portfolios = [
     id: 1,
     title: "CBE Lesson Plans & Schemes of Work",
     des: "Competency-based lesson plans and schemes of work aligned with KICD standards for Junior Secondary Science.",
+    description:
+      "Competency-based lesson plans and schemes of work aligned with KICD standards for Junior Secondary Science.",
     img: "/portfolio-lesson-plans.svg",
-    iconLists: [
-      "/icon-curriculum.svg",
-      "/icon-cbe.svg",
-      "/icon-teach.svg",
-      "/icon-kicd.svg",
-    ],
     link: "#",
+    details: [
+      "Complete schemes of work covering all Junior Secondary Science strands: Scientific Inquiry, Matter, Living Things, and Earth & Space Science.",
+      "Weekly lesson plans with explicit learning outcomes, teaching strategies, resources, and assessment criteria mapped to KICD CBE standards.",
+      "Differentiated activities for mixed-ability classrooms ensuring every learner progresses toward competency.",
+      "Integrated cross-cutting issues including safety, environmental conservation, and career guidance in every unit.",
+      "Ready-to-use templates for lesson observations, peer reviews, and KICD reporting requirements.",
+    ],
   },
   {
     id: 2,
     title: "Science Lab Practical Manual",
     des: "A comprehensive collection of hands-on practical activities and experiments for Integrated Science and Agriculture.",
+    description:
+      "A comprehensive collection of hands-on practical activities and experiments for Integrated Science and Agriculture.",
     img: "/portfolio-lab-manual.svg",
-    iconLists: [
-      "/icon-lab.svg",
-      "/icon-science.svg",
-      "/icon-safety.svg",
-      "/icon-experiment.svg",
-    ],
     link: "#",
+    details: [
+      "Step-by-step lab guides for 40+ practical experiments across Biology, Chemistry, Physics, and Agriculture strands.",
+      "Clear diagrams, material lists, expected results, and discussion questions for each experiment.",
+      "Lab safety guidelines and risk assessment templates tailored for Junior Secondary school labs.",
+      "Practical activity worksheets aligned to CBC assessment rubrics and learning outcomes.",
+      "Equipment checklists, specimen preparation guides, and troubleshooting tips for common lab challenges.",
+    ],
   },
   {
     id: 3,
     title: "Student Assessment & Rubrics System",
     des: "CBC-aligned assessment rubrics and student progress tracking tools for holistic competency evaluation.",
+    description:
+      "CBC-aligned assessment rubrics and student progress tracking tools for holistic competency evaluation.",
     img: "/portfolio-assessment.svg",
-    iconLists: [
-      "/icon-assess.svg",
-      "/icon-cbc.svg",
-      "/icon-rubric.svg",
-      "/icon-tracker.svg",
-    ],
     link: "#",
+    details: [
+      "Holistic rubrics aligned to the four domains of CBC: Knowledge & Understanding, Skills, Attitudes & Values, and Community Service.",
+      "Digital and printable student progress trackers documenting competency achievements across all learning areas.",
+      "Portfolio assessment templates for collecting and evaluating learner artifacts over time.",
+      "Term-end reporting templates that translate competency scores into clear, actionable feedback for parents.",
+      "Guidance on using formative assessment strategies — questioning techniques, peer assessment, and self-reflection journals.",
+    ],
   },
   {
     id: 4,
     title: "School Garden & Agriculture Project",
     des: "A thriving school garden initiative teaching sustainable agriculture, crop science, and environmental stewardship.",
+    description:
+      "A thriving school garden initiative teaching sustainable agriculture, crop science, and environmental stewardship.",
     img: "/portfolio-garden.svg",
-    iconLists: [
-      "/icon-garden.svg",
-      "/icon-plant.svg",
-      "/icon-agri.svg",
-      "/icon-sustain.svg",
-    ],
     link: "#",
+    details: [
+      "A fully operational ¼-acre school garden where learners practice crop production from planting to harvest under the Agriculture curriculum.",
+      "Crop rotation and soil conservation techniques taught through guided practical sessions in the garden.",
+      "Student-managed farm records — budgets, input logs, and yield reports — building numeracy and enterprise skills.",
+      "Poultry and rabbit-keeping units integrated into the garden for holistic agriculture learning.",
+      "Produce sold to the school community, with profits reinvested into lab equipment and learning resources for learners.",
+    ],
   },
   {
     id: 5,
     title: "Science Fair & Exhibition Projects",
     des: "Showcase of student-led science fair projects, exhibitions, and innovative research from Junior Secondary learners.",
+    description:
+      "Showcase of student-led science fair projects, exhibitions, and innovative research from Junior Secondary learners.",
     img: "/portfolio-science-fair.svg",
-    iconLists: [
-      "/icon-fair.svg",
-      "/icon-project.svg",
-      "/icon-innovate.svg",
-      "/icon-exhibit.svg",
-    ],
     link: "#",
+    details: [
+      "Annual school Science Fair mentoring programme guiding learners from project ideation through to public exhibition.",
+      "Project evaluation rubrics assessing scientific method, creativity, presentation skills, and community impact.",
+      "Winning projects selected for regional and national science exhibitions — multiple awards earned at county level.",
+      "Resources for organizing a school science exhibition: logistics checklist, judging criteria, and certificate templates.",
+      "Innovation spotlight: water filtration system, organic pesticide, and solar dryer projects developed by Junior Secondary learners.",
+    ],
   },
   {
     id: 6,
     title: "Digital Teaching Resources",
     des: "Interactive digital resources and multimedia materials designed to make science education engaging and accessible.",
+    description:
+      "Interactive digital resources and multimedia materials designed to make science education engaging and accessible.",
     img: "/portfolio-digital.svg",
-    iconLists: [
-      "/icon-digital.svg",
-      "/icon-multimedia.svg",
-      "/icon-online.svg",
-      "/icon-resource.svg",
-    ],
     link: "#",
+    details: [
+      "A curated collection of 200+ interactive science learning resources: simulations, 3D models, video lessons, and quizzes.",
+      "Resources organized by KICD strand, grade level, and competency — searchable and accessible on any device.",
+      "Multimedia lesson templates and screencast tutorials that other teachers can adapt for their own classrooms.",
+      "Low-bandwidth and offline-friendly resource packs for schools with limited internet connectivity.",
+      "Regularly updated with new content aligned to KICD curriculum revisions and emerging science topics.",
+    ],
   },
 ];
 
